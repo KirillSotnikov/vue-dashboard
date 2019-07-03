@@ -30,52 +30,44 @@ export default {
     return {
       tableData: [
         {
-          name: "Dakota Rice",
-          salary: "$36,738",
-          country: "Niger",
-          city: "Oud-Turnhout",
-          isShow: true,
-          id: 1
-        },
-        {
-          name: "Minerva Hooper",
-          salary: "$23,738",
-          country: "Curaçao",
-          city: "Sinaai-Waas",
           isShow: false,
-          id: 2
+          id: 1,
+          ru: {
+            name: "Dakota Rice",
+            salary: "$36,738",
+            country: "Niger",
+            city: "Oud-Turnhout",
+          }
         },
         {
-          name: "Sage Rodriguez",
-          salary: "$56,142",
-          country: "Netherlands",
-          city: "Overland Park",
           isShow: true,
-          id: 3
+          id: 2,
+          ru: {
+            name: "Dakota Rice",
+            salary: "$36,738",
+            country: "Niger",
+            city: "Oud-Turnhout",
+          }
         },
         {
-          name: "Philip Chaney",
-          salary: "$38,735",
-          country: "Korea, South",
-          city: "Gloucester",
           isShow: true,
-          id: 4
+          id: 3,
+          ru: {
+            name: "Dakota Rice",
+            salary: "$36,738",
+            country: "Niger",
+            city: "Oud-Turnhout",
+          }
         },
         {
-          name: "Doris Greene",
-          salary: "$63,542",
-          country: "Malawi",
-          city: "Feldkirchen in Kārnten",
           isShow: false,
-          id: 5
-        },
-        {
-          name: "Mason Porter",
-          salary: "$78,615",
-          country: "Chile",
-          city: "Gloucester",
-          isShow: false,
-          id: 6
+          id: 4,
+          ru: {
+            name: "Dakota Rice",
+            salary: "$36,738",
+            country: "Niger",
+            city: "Oud-Turnhout",
+          }
         }
       ]
     }

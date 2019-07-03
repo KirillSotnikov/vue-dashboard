@@ -11,6 +11,7 @@ import UpgradeToPRO from "@/pages/UpgradeToPRO.vue";
 import Request from "@/pages/Request.vue";
 import Team from "@/pages/Team.vue";
 import CreateTeam from "@/pages/CreateTeam.vue";
+import EditTeam from "@/pages/EditTeam.vue";
 import Settings from "@/pages/Settings.vue";
 import Login from "@/pages/Login.vue";
 import Registration from "@/pages/Registration.vue";
@@ -48,6 +49,12 @@ const routes = [
         path: "createTeam",
         name: "Create Team",
         component: CreateTeam
+      },
+      {
+        path: "editTeam/:id",
+        name: "Edit Team",
+        component: EditTeam,
+        props: true
       },
       {
         path: "settings",
