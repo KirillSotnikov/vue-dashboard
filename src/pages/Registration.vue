@@ -3,7 +3,6 @@
       <md-card-header data-background-color="green">
         <div class="md-title">Registration</div>
       </md-card-header>
-  <p>{{worker.id}}</p>
       <md-card-content>
           <div class="md-layout-item">
             <md-field>

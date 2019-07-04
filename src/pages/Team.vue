@@ -11,9 +11,12 @@
           </md-card-header>
           <md-card-content>
             <div @click="CreateLink" class="md-layout-item md-size-100 text-right"><button type="button" class="md-button md-raised md-success md-theme-default"><div class="md-ripple"><div class="md-button-content">Create team</div> </div></button></div>
-            <simple-table table-header-color="green" :navButtons="true" :editItem="true" :tableData="teamData"></simple-table>
+            <simple-table table-header-color="green" :navButtons="true" :editItem="true" :tableData="tableData"></simple-table>
+            <md-button class="md-raised md-success" @click="prevPage" :disabled="isHiddenPrev">Prev</md-button>
+            <md-button class="md-raised md-success" @click="nextPage" :disabled="isHiddenNext">Next</md-button>
           </md-card-content>
         </md-card>
+
       </div>
     </div>
   </div>
@@ -29,66 +32,46 @@ export default {
   },
   data() {
     return {
-      tableData: [
-        {
-          name: "Dakota Rice",
-          salary: "$36,738",
-          country: "Niger",
-          city: "Oud-Turnhout",
-          isShow: true,
-          id: 1
-        },
-        {
-          name: "Minerva Hooper",
-          salary: "$23,738",
-          country: "Curaçao",
-          city: "Sinaai-Waas",
-          isShow: false,
-          id: 2
-        },
-        {
-          name: "Sage Rodriguez",
-          salary: "$56,142",
-          country: "Netherlands",
-          city: "Overland Park",
-          isShow: true,
-          id: 3
-        },
-        {
-          name: "Philip Chaney",
-          salary: "$38,735",
-          country: "Korea, South",
-          city: "Gloucester",
-          isShow: true,
-          id: 4
-        },
-        {
-          name: "Doris Greene",
-          salary: "$63,542",
-          country: "Malawi",
-          city: "Feldkirchen in Kārnten",
-          isShow: false,
-          id: 5
-        },
-        {
-          name: "Mason Porter",
-          salary: "$78,615",
-          country: "Chile",
-          city: "Gloucester",
-          isShow: false,
-          id: 6
-        }
-      ]
-    }
+      page: 1,
+      rowsPerPage: 5,
+      isHiddenPrev: true,
+      isHiddenNext: false
+      }
   },
   methods: {
     CreateLink() {
       this.$router.push('/createTeam')
+    },
+    prevPage (){
+      this.isHiddenNext = false
+      if(this.page !== 1) {
+        this.page = this.page - 1 ;
+      }
+
+      if(this.page == 1) {
+        this.isHiddenPrev = true
+      }
+    },
+    nextPage () {
+      this.isHiddenPrev = false
+
+      if(this.page < this.teamData.length / this.rowsPerPage){
+        this.page = this.page + 1 ;
+      }
+
+      if(this.page < Math.ceil(this.teamData.length / this.rowsPerPage)) {
+        this.isHiddenNext = false
+      } else {
+        this.isHiddenNext = true
+      }
     }
   },
   computed: {
     teamData() {
       return this.$store.getters.teamData
+    },
+    tableData() {
+      return this.teamData.slice((this.page - 1) * this.rowsPerPage, this.page * this.rowsPerPage)
     }
   }
 };

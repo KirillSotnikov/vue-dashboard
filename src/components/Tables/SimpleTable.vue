@@ -2,6 +2,7 @@
   <div>
     <md-table v-model="tableData" :table-header-color="tableHeaderColor">
       <md-table-row slot="md-table-row" slot-scope="{ item }" :class="{hidden:!item.isShow}">
+        <md-table-cell md-label="ID">{{ item.id }}</md-table-cell>
         <md-table-cell md-label="Name">{{ item.ru.name }}</md-table-cell>
         <md-table-cell md-label="Country">{{ item.ru.country }}</md-table-cell>
         <md-table-cell md-label="City">{{ item.ru.city }}</md-table-cell>

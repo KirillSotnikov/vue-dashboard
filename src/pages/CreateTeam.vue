@@ -19,26 +19,26 @@
         <div class="md-layout">
           <div class="md-layout-item md-small-size-100 md-size-50">
             <md-field>
-              <label>User Name</label>
+              <label>Name</label>
               <md-input v-model="ru.name" type="text"></md-input>
             </md-field>
           </div>
           <div class="md-layout-item md-small-size-100 md-size-50">
             <md-field>
-              <label>Email Address</label>
-              <md-input v-model="ru.email" type="email"></md-input>
+              <label>Salary</label>
+              <md-input v-model="ru.salary" type="email"></md-input>
             </md-field>
           </div>
           <div class="md-layout-item md-small-size-100 md-size-50">
             <md-field>
-              <label>First Name</label>
-              <md-input v-model="ru.firstName" type="text"></md-input>
+              <label>Country</label>
+              <md-input v-model="ru.country" type="text"></md-input>
             </md-field>
           </div>
           <div class="md-layout-item md-small-size-100 md-size-50">
             <md-field>
-              <label>Last Name</label>
-              <md-input v-model="ru.lastName" type="text"></md-input>
+              <label>City</label>
+              <md-input v-model="ru.city" type="text"></md-input>
             </md-field>
           </div>
         </div>
@@ -46,26 +46,26 @@
         <div class="md-layout">
           <div class="md-layout-item md-small-size-100 md-size-50">
             <md-field>
-              <label>User Name</label>
+              <label>Name</label>
               <md-input v-model="ua.name" type="text"></md-input>
             </md-field>
           </div>
           <div class="md-layout-item md-small-size-100 md-size-50">
             <md-field>
-              <label>Email Address</label>
-              <md-input v-model="ua.email" type="email"></md-input>
+              <label>Salary</label>
+              <md-input v-model="ua.salary" type="email"></md-input>
             </md-field>
           </div>
           <div class="md-layout-item md-small-size-100 md-size-50">
             <md-field>
-              <label>First Name</label>
-              <md-input v-model="ua.firstName" type="text"></md-input>
+              <label>Country</label>
+              <md-input v-model="ua.country" type="text"></md-input>
             </md-field>
           </div>
           <div class="md-layout-item md-small-size-100 md-size-50">
             <md-field>
-              <label>Last Name</label>
-              <md-input v-model="ua.lastName" type="text"></md-input>
+              <label>City</label>
+              <md-input v-model="ua.city" type="text"></md-input>
             </md-field>
           </div>
         </div>
@@ -73,33 +73,33 @@
         <div class="md-layout">
           <div class="md-layout-item md-small-size-100 md-size-50">
             <md-field>
-              <label>User Name</label>
+              <label>Name</label>
               <md-input v-model="en.name" type="text"></md-input>
             </md-field>
           </div>
           <div class="md-layout-item md-small-size-100 md-size-50">
             <md-field>
-              <label>Email Address</label>
-              <md-input v-model="en.email" type="email"></md-input>
+              <label>Salary</label>
+              <md-input v-model="en.salary" type="email"></md-input>
             </md-field>
           </div>
           <div class="md-layout-item md-small-size-100 md-size-50">
             <md-field>
-              <label>First Name</label>
-              <md-input v-model="en.firstName" type="text"></md-input>
+              <label>Country</label>
+              <md-input v-model="en.country" type="text"></md-input>
             </md-field>
           </div>
           <div class="md-layout-item md-small-size-100 md-size-50">
             <md-field>
-              <label>Last Name</label>
-              <md-input v-model="en.lastName" type="text"></md-input>
+              <label>City</label>
+              <md-input v-model="en.city" type="text"></md-input>
             </md-field>
           </div>
         </div>
-        <md-field>
+        <!-- <md-field>
           <label>Only images</label>
           <md-file v-model="single" accept="image/*" />
-        </md-field>
+        </md-field> -->
         <div class="md-layout-item md-size-100 text-right">
           <md-button class="md-raised md-success" to="/team">Create Team</md-button>
         </div>
