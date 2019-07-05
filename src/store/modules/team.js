@@ -6,19 +6,19 @@ export default {
         id: 1,
         editLink: '/editTeam',
         ru: {
-          name: "Dakota Rice11",
+          name: "ONE",
           salary: "$36,738",
           country: "Niger",
           city: "Oud-Turnhout"
         }, 
         ua: {
-          name: "Dakota Rice11",
+          name: "ONE",
           salary: "$36,738",
           country: "Niger",
           city: "Oud-Turnhout"
         },
         en: {
-          name: "Dakota Rice11",
+          name: "ONE",
           salary: "$36,738",
           country: "Niger",
           city: "Oud-Turnhout"
@@ -29,19 +29,19 @@ export default {
         id: 2,
         editLink: '/editTeam',
         ru: {
-          name: "Dakota Rice22",
+          name: "TWO",
           salary: "$36,738",
           country: "Niger",
           city: "Oud-Turnhout",
         }, 
         ua: {
-          name: "Dakota Rice22",
+          name: "TWO",
           salary: "$36,738",
           country: "Niger",
           city: "Oud-Turnhout"
         },
         en: {
-          name: "Dakota Rice22",
+          name: "TWO",
           salary: "$36,738",
           country: "Niger",
           city: "Oud-Turnhout"
@@ -52,19 +52,19 @@ export default {
         id: 3,
         editLink: '/editTeam',
         ru: {
-          name: "Dakota Rice33",
+          name: "THREE",
           salary: "$36,738",
           country: "Niger",
           city: "Oud-Turnhout"
         }, 
         ua: {
-          name: "Dakota Rice33",
+          name: "THREE",
           salary: "$36,738",
           country: "Niger",
           city: "Oud-Turnhout"
         },
         en: {
-          name: "Dakota Rice33",
+          name: "THREE",
           salary: "$36,738",
           country: "Niger",
           city: "Oud-Turnhout"
@@ -75,19 +75,19 @@ export default {
         id: 4,
         editLink: '/editTeam',
         ru: {
-          name: "Dakota Rice44",
+          name: "FOUR",
           salary: "$36,738",
           country: "Niger",
           city: "Oud-Turnhout"
         }, 
         ua: {
-          name: "Dakota Rice44",
+          name: "FOUR",
           salary: "$36,738",
           country: "Niger",
           city: "Oud-Turnhout"
         },
         en: {
-          name: "Dakota Rice44",
+          name: "FOUR",
           salary: "$36,738",
           country: "Niger",
           city: "Oud-Turnhout"
@@ -98,19 +98,19 @@ export default {
         id: 5,
         editLink: '/editTeam',
         ru: {
-          name: "Dakota Rice33",
+          name: "FIVE",
           salary: "$36,738",
           country: "Niger",
           city: "Oud-Turnhout"
         }, 
         ua: {
-          name: "Dakota Rice33",
+          name: "FIVE",
           salary: "$36,738",
           country: "Niger",
           city: "Oud-Turnhout"
         },
         en: {
-          name: "Dakota Rice33",
+          name: "FIVE",
           salary: "$36,738",
           country: "Niger",
           city: "Oud-Turnhout"
@@ -121,19 +121,19 @@ export default {
         id: 6,
         editLink: '/editTeam',
         ru: {
-          name: "Dakota Rice33",
+          name: "SIX",
           salary: "$36,738",
           country: "Niger",
           city: "Oud-Turnhout"
         }, 
         ua: {
-          name: "Dakota Rice33",
+          name: "SIX",
           salary: "$36,738",
           country: "Niger",
           city: "Oud-Turnhout"
         },
         en: {
-          name: "Dakota Rice33",
+          name: "SIX",
           salary: "$36,738",
           country: "Niger",
           city: "Oud-Turnhout"
@@ -144,19 +144,19 @@ export default {
         id: 7,
         editLink: '/editTeam',
         ru: {
-          name: "Dakota Rice33",
+          name: "SEVEN",
           salary: "$36,738",
           country: "Niger",
           city: "Oud-Turnhout"
         }, 
         ua: {
-          name: "Dakota Rice33",
+          name: "SEVEN",
           salary: "$36,738",
           country: "Niger",
           city: "Oud-Turnhout"
         },
         en: {
-          name: "Dakota Rice33",
+          name: "SEVEN",
           salary: "$36,738",
           country: "Niger",
           city: "Oud-Turnhout"
@@ -167,19 +167,19 @@ export default {
         id: 8,
         editLink: '/editTeam',
         ru: {
-          name: "Dakota Rice33",
+          name: "EIGHT",
           salary: "$36,738",
           country: "Niger",
           city: "Oud-Turnhout"
         }, 
         ua: {
-          name: "Dakota Rice33",
+          name: "EIGHT",
           salary: "$36,738",
           country: "Niger",
           city: "Oud-Turnhout"
         },
         en: {
-          name: "Dakota Rice33",
+          name: "EIGHT",
           salary: "$36,738",
           country: "Niger",
           city: "Oud-Turnhout"
@@ -190,19 +190,19 @@ export default {
         id: 9,
         editLink: '/editTeam',
         ru: {
-          name: "Dakota Rice33",
+          name: "NINE",
           salary: "$36,738",
           country: "Niger",
           city: "Oud-Turnhout"
         }, 
         ua: {
-          name: "Dakota Rice33",
+          name: "NINE",
           salary: "$36,738",
           country: "Niger",
           city: "Oud-Turnhout"
         },
         en: {
-          name: "Dakota Rice33",
+          name: "NINE",
           salary: "$36,738",
           country: "Niger",
           city: "Oud-Turnhout"
@@ -213,19 +213,19 @@ export default {
         id: 10,
         editLink: '/editTeam',
         ru: {
-          name: "Dakota Rice33",
+          name: "TEN ",
           salary: "$36,738",
           country: "Niger",
           city: "Oud-Turnhout"
         }, 
         ua: {
-          name: "Dakota Rice33",
+          name: "TEN",
           salary: "$36,738",
           country: "Niger",
           city: "Oud-Turnhout"
         },
         en: {
-          name: "Dakota Rice33",
+          name: "TEN",
           salary: "$36,738",
           country: "Niger",
           city: "Oud-Turnhout"
@@ -236,19 +236,19 @@ export default {
         id: 11,
         editLink: '/editTeam',
         ru: {
-          name: "Dakota Rice33",
+          name: "ELEVEN",
           salary: "$36,738",
           country: "Niger",
           city: "Oud-Turnhout"
         }, 
         ua: {
-          name: "Dakota Rice33",
+          name: "ELEVEN",
           salary: "$36,738",
           country: "Niger",
           city: "Oud-Turnhout"
         },
         en: {
-          name: "Dakota Rice33",
+          name: "ELEVEN",
           salary: "$36,738",
           country: "Niger",
           city: "Oud-Turnhout"

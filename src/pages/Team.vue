@@ -10,7 +10,13 @@
             <p class="category">Here is a subtitle for this team table</p>
           </md-card-header>
           <md-card-content>
-            <div @click="CreateLink" class="md-layout-item md-size-100 text-right"><button type="button" class="md-button md-raised md-success md-theme-default"><div class="md-ripple"><div class="md-button-content">Create team</div> </div></button></div>
+            <div class="md-layout">
+                <md-field class="md-layout-item md-size-33">
+                  <label>Search</label>
+                  <md-input @input="setPage(1)" v-model="search"></md-input>
+                </md-field>
+                <div class="md-layout-item md-size-66 text-right"><button type="button" @click="CreateLink" class="md-button md-raised md-success md-theme-default"><div class="md-ripple"><div class="md-button-content">Create team</div> </div></button></div>
+            </div>
             <simple-table table-header-color="green" :navButtons="true" :editItem="true" :tableData="tableData"></simple-table>
             <md-button class="md-raised md-success" @click="prevPage" :disabled="isHiddenPrev">Prev</md-button>
             <md-button class="md-raised md-success" @click="nextPage" :disabled="isHiddenNext">Next</md-button>
@@ -32,6 +38,8 @@ export default {
   },
   data() {
     return {
+      arr: [],
+      search: '',
       page: 1,
       rowsPerPage: 5,
       isHiddenPrev: true,
@@ -48,9 +56,9 @@ export default {
         this.page = this.page - 1 ;
       }
 
-      if(this.page == 1) {
-        this.isHiddenPrev = true
-      }
+      // if(this.page == 1) {
+      //   this.isHiddenPrev = true
+      // }
     },
     nextPage () {
       this.isHiddenPrev = false
@@ -59,19 +67,37 @@ export default {
         this.page = this.page + 1 ;
       }
 
+      // if(this.page < Math.ceil(this.teamData.length / this.rowsPerPage)) {
+      //   this.isHiddenNext = false
+      // } else {
+      //   this.isHiddenNext = true
+      // }
+    },
+    setPage(num) {
+      this.page = num
+      if(this.search != '') {
+        this.isHiddenPrev = true
+      } 
+    }
+  },
+  computed: {
+    teamData() {
+      return this.$store.getters.teamData.filter(item => {
+          return item.ru.name.toLowerCase().includes(this.search.toLowerCase())
+        })
+    },
+    tableData() {
+      if(this.page == 1) {
+        this.isHiddenPrev = true
+      }
+
       if(this.page < Math.ceil(this.teamData.length / this.rowsPerPage)) {
         this.isHiddenNext = false
       } else {
         this.isHiddenNext = true
       }
-    }
-  },
-  computed: {
-    teamData() {
-      return this.$store.getters.teamData
-    },
-    tableData() {
-      return this.teamData.slice((this.page - 1) * this.rowsPerPage, this.page * this.rowsPerPage)
+
+      return this.teamData.slice((this.page - 1) * this.rowsPerPage, this.page * this.rowsPerPage)  
     }
   }
 };
